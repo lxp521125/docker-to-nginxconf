@@ -4,7 +4,7 @@ import json
 import os
 import re
 print '''===========start============='''
-getstr = commands.getstatusoutput('sudo docker ps |grep mynginx')
+getstr = commands.getstatusoutput('sudo docker ps |grep my-nginx')
 if getstr[1] == '' :
     print 'error  the nginx is not running;'
     exit()
